@@ -1,17 +1,22 @@
-# iNatSounds
-iNatSounds Dataset
+# The iNaturalist Sounds Dataset
+
+![Banner](assets/overview.png)
+
+We present the iNaturalist Sounds Dataset (iNatSounds), a collection of 230,000 audio files capturing sounds from over 5,500 species, contributed by more than 27,000 recordists worldwide. The dataset encompasses sounds from birds, mammals, insects, reptiles, and amphibians, with audio and species labels derived from observations submitted to iNaturalist, a global citizen science platform. Each recording in the dataset varies in length and includes a single species annotation. We benchmark multiple backbone architectures, comparing multiclass classification objectives with multilabel objectives. Despite weak labeling, we demonstrate that iNatSounds serves as a robust pretraining resource, achieving high performance relative to alternatives on strongly labeled downstream evaluation datasets. The dataset is available as a single, freely accessible archive, promoting accessibility and research in this important domain. We envision models trained on this data powering next-generation public engagement applications, and assisting biologists, ecologists, and land use managers in processing large audio collections, thereby contributing to the understanding of species compositions in diverse soundscapes.
 
 ## Details
 
-| Super Category | Species Count | Train Recordings | Train Mini Recordings | Val Recordings | Test Recordings |
+
+| Super Category | Train | Train | Val/Test | Val | Test |
 | ---- | ---- | ---- | ---- | ---- | ---- |
-Birds|1,486|414,847|74,300|14,860|x|
-Insects|2,526|663,682|126,300|25,260|x|
-Amphibians|170|46,252|8,500|1,700|x|
-Mammals|246|68,917|12,300|2,460|x|
-Reptiles|313|86,830|15,650|3,130|x|
+| | **Species** | **Audio** | **Species** | **Audio** | **Audio** |
+Aves| 3,846 | 111,066 | 939 | 37,599 | 41,044 
+Insecta| 745 | 10,080 | 111 | 3,065 | 3,306 
+Amphibia| 650| 13,196 | 118 | 4,005 | 4,082 
+Mammalia|296| 2,566 | 41 | 983 | 1,073 
+Reptilia| 32 | 154 | 3 | 49 | 32 
 ||||||
-Total|10,000|2,686,843|500,000|100,000|500,000|
+**Total**| 5,569 | 137,062 | 1,212 | 45,701 | 49,537
 
 
 ## Evaluation

@@ -21,6 +21,12 @@ Reptilia| 32 | 154 | 3 | 49 | 32
 
 ## Evaluation
 
+We evaluate at the "file-level", i.e. a single prediction and label is expected from an entire audio recording. We compute the following metrics
+1. Class Averaged Top-1: Top-1 accuracy is computed for each class separately and then averaged
+2. Class Averaged Top-5: Top-5 accuracy is computed for each class separately and then averaged
+3. mAP: AP is computed for each class separately and then averaged
+4. mF1: F1-score is computed for each class by choosing the threshold maximising F1 (there may be different thresholds for different classes). These F1 scores are averaged
+
 
 ## Guidelines
 
@@ -46,8 +52,7 @@ info{
 
 image{
   "id" : int,
-  "width" : int,
-  "height" : int,
+  "duration" : float,
   "file_name" : str,
   "license" : int,
   "rights_holder" : str,
@@ -99,35 +104,27 @@ By downloading this dataset you agree to the following terms:
 ## Data
 
 The dataset files are available through the AWS Open Data Program:
-  * [Train Images [224GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train.tar.gz)
+  * [Train Recordings [GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train.tar.gz)
       * s3://ml-inat-competition-datasets/2021/train.tar.gz
       * Running `md5sum train.tar.gz` should produce `e0526d53c7f7b2e3167b2b43bb2690ed`
-      * Images have a max dimension of 500px and have been converted to JPEG format
-      * Untaring the images creates a directory structure like `train/category/image.jpg`. This may take a while.
-  * [Train Annotations [221MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train.json.tar.gz)
+      * Recordings have a sample rate of 22.05kHz and have been converted to WAV format
+      * Untaring the recordings creates a directory structure like `train/category/recording.wav`. This may take a while.
+  * [Train Annotations [MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train.json.tar.gz)
       * s3://ml-inat-competition-datasets/2021/train.json.tar.gz
       * Running `md5sum train.json.tar.gz` should produce `38a7bb733f7a09214d44293460ec0021`
-  * [Train Mini Images [42GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train_mini.tar.gz)
-      * s3://ml-inat-competition-datasets/2021/train_mini.tar.gz
-      * Running `md5sum train_mini.tar.gz` should produce `db6ed8330e634445efc8fec83ae81442`
-      * Images have a max dimension of 500px and have been converted to JPEG format
-      * Untaring the images creates a directory structure like `train_mini/category/image.jpg`. This may take a while.
-  * [Train Mini Annotations [45MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train_mini.json.tar.gz)
-      * s3://ml-inat-competition-datasets/2021/train_mini.json.tar.gz
-      * Running `md5sum train_mini.json.tar.gz` should produce `395a35be3651d86dc3b0d365b8ea5f92`
-  * [Validation Images [8.4GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/val.tar.gz)
+  * [Validation Recordings [GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/val.tar.gz)
       * s3://ml-inat-competition-datasets/2021/val.tar.gz
       * Running `md5sum val.tar.gz` should produce `f6f6e0e242e3d4c9569ba56400938afc`
-      * Images have a max dimension of 500px and have been converted to JPEG format
-      * Untaring the images creates a directory structure like `val/category/image.jpg`. This may take a while.
-  * [Validation Annotations [9.4MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/val.json.tar.gz)
+      * Recordings have a sample rate of 22.05kHz and have been converted to WAV format
+      * Untaring the recordings creates a directory structure like `val/category/recording.wav`. This may take a while.
+  * [Validation Annotations [MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/val.json.tar.gz)
       * s3://ml-inat-competition-datasets/2021/val.json.tar.gz
       * Running `md5sum val.json.tar.gz` should produce `4d761e0f6a86cc63e8f7afc91f6a8f0b`
-  * [Test Images [43GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/public_test.tar.gz)
+  * [Test Recordings [GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/public_test.tar.gz)
       * s3://ml-inat-competition-datasets/2021/public_test.tar.gz
-      * Running `md5sum public_test.tar.gz` should produce `7124b949fe79bfa7f7019a15ef3dbd06`
-      * Images have a max dimension of 500px and have been converted to JPEG format
-      * Untaring the images creates a directory structure like `public_test/image.jpg`.
-  * [Test Info [21MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/public_test.json.tar.gz)
+      * Running `md5sum test.tar.gz` should produce `7124b949fe79bfa7f7019a15ef3dbd06`
+      * Recordings have a sample rate of 22.05kHz and have been converted to WAV format
+      * Untaring the recordings creates a directory structure like `test/category/recording.wav`. This may take a while.
+  * [Test Annotations [MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/public_test.json.tar.gz)
       * s3://ml-inat-competition-datasets/2021/public_test.json.tar.gz
-      * Running `md5sum public_test.json.tar.gz` should produce `7a9413db55c6fa452824469cc7dd9d3d`
+      * Running `md5sum test.json.tar.gz` should produce `7a9413db55c6fa452824469cc7dd9d3d`

@@ -10,13 +10,13 @@ We present the iNaturalist Sounds Dataset (iNatSounds), a collection of 230,000 
 | Super Category | Train | Train | Val/Test | Val | Test |
 | ---- | ---- | ---- | ---- | ---- | ---- |
 | | **Species** | **Audio** | **Species** | **Audio** | **Audio** |
-Aves| 3,846 | 111,059 | 939 | 37,598 | 41,044 
-Insecta| 745 | 10,080 | 111 | 3,065 | 3,306 
-Amphibia| 650| 13,194 | 118 | 4,005 | 4,082 
+Aves| 3,846 | 111,029 | 939 | 37,597 | 41,036 
+Insecta| 745 | 10,080 | 111 | 3,065 | 3,305 
+Amphibia| 650| 13,183 | 118 | 4,004 | 4,081 
 Mammalia|296| 2,566 | 41 | 983 | 1,073 
 Reptilia| 32 | 154 | 3 | 49 | 32 
 ||||||
-**Total**| 5,569 | 137,053 | 1,212 | 45,700 | 49,537
+**Total**| 5,569 | 137,012 | 1,212 | 45,698 | 49,527
 
 
 ![Map](assets/map.png)
@@ -77,12 +77,12 @@ category{
   "family" : str,
   "genus" : str,
   "specific_epithet" : str,
-  "image_dir_name" : str,
+  "audio_dir_name" : str,
 }
 
 annotation{
   "id" : int,
-  "image_id" : int,
+  "audio_id" : int,
   "category_id" : int
 }
 

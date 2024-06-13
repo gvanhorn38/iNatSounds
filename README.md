@@ -19,6 +19,9 @@ Reptilia| 32 | 154 | 3 | 49 | 32
 **Total**| 5,569 | 137,062 | 1,212 | 45,701 | 49,537
 
 
+![Map](assets/map.png)
+![Class Counts](assets/class_counts.jpg)
+
 ## Evaluation
 
 We evaluate at the "file-level", i.e. a single prediction and label is expected from an entire audio recording. We compute the following metrics

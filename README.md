@@ -10,9 +10,9 @@ We present the iNaturalist Sounds Dataset (iNatSounds), a collection of 230,000 
 | Super Category | Train | Train | Val/Test | Val | Test |
 | ---- | ---- | ---- | ---- | ---- | ---- |
 | | **Species** | **Audio** | **Species** | **Audio** | **Audio** |
-Aves| 3,846 | 111,066 | 939 | 37,599 | 41,044 
+Aves| 3,846 | 111,059 | 939 | 37,598 | 41,044 
 Insecta| 745 | 10,080 | 111 | 3,065 | 3,306 
-Amphibia| 650| 13,196 | 118 | 4,005 | 4,082 
+Amphibia| 650| 13,194 | 118 | 4,005 | 4,082 
 Mammalia|296| 2,566 | 41 | 983 | 1,073 
 Reptilia| 32 | 154 | 3 | 49 | 32 
 ||||||
@@ -38,7 +38,7 @@ We evaluate at the "file-level", i.e. a single prediction and label is expected 
 ```
 {
   "info" : info,
-  "images" : [image],
+  "audio" : [audio],
   "categories" : [category],
   "annotations" : [annotation],
   "licenses" : [license]
@@ -53,7 +53,7 @@ info{
   "date_created" : str,
 }
 
-image{
+audio{
   "id" : int,
   "duration" : float,
   "file_name" : str,

@@ -78,6 +78,7 @@ category{
   "genus" : str,
   "specific_epithet" : str,
   "audio_dir_name" : str,
+  "evaluation": 0 or 1
 }
 
 annotation{

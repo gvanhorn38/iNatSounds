@@ -108,27 +108,27 @@ By downloading this dataset you agree to the following terms:
 ## Data
 
 The dataset files are available through the AWS Open Data Program:
-  * [Train Recordings [GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train.tar.gz)
-      * s3://ml-inat-competition-datasets/2021/train.tar.gz
-      * Running `md5sum train.tar.gz` should produce `e0526d53c7f7b2e3167b2b43bb2690ed`
+  * [Train Recordings [81GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/train.tar.gz)
+      * s3://ml-inat-competition-datasets/sounds/2024/train.tar.gz
+      * Running `md5sum train.tar.gz` should produce `181c5419220c8a9468a12b8c938469ec`
       * Recordings have a sample rate of 22.05kHz and have been converted to WAV format
       * Untaring the recordings creates a directory structure like `train/category/recording.wav`. This may take a while.
-  * [Train Annotations [MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train.json.tar.gz)
-      * s3://ml-inat-competition-datasets/2021/train.json.tar.gz
-      * Running `md5sum train.json.tar.gz` should produce `38a7bb733f7a09214d44293460ec0021`
-  * [Validation Recordings [GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/val.tar.gz)
-      * s3://ml-inat-competition-datasets/2021/val.tar.gz
-      * Running `md5sum val.tar.gz` should produce `f6f6e0e242e3d4c9569ba56400938afc`
+  * [Train Annotations [14MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/train.json.tar.gz)
+      * s3://ml-inat-competition-datasets/sounds/2024/train.json.tar.gz
+      * Running `md5sum train.json.tar.gz` should produce `a28055b8cae7020c3bbf0c0a0717483a`
+  * [Validation Recordings [25GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/val.tar.gz)
+      * s3://ml-inat-competition-datasets/sounds/2024/val.tar.gz
+      * Running `md5sum val.tar.gz` should produce `828e4cf96e818228cb3536469cb3fb1c`
       * Recordings have a sample rate of 22.05kHz and have been converted to WAV format
       * Untaring the recordings creates a directory structure like `val/category/recording.wav`. This may take a while.
-  * [Validation Annotations [MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/val.json.tar.gz)
-      * s3://ml-inat-competition-datasets/2021/val.json.tar.gz
-      * Running `md5sum val.json.tar.gz` should produce `4d761e0f6a86cc63e8f7afc91f6a8f0b`
-  * [Test Recordings [GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/public_test.tar.gz)
-      * s3://ml-inat-competition-datasets/2021/public_test.tar.gz
-      * Running `md5sum test.tar.gz` should produce `7124b949fe79bfa7f7019a15ef3dbd06`
+  * [Validation Annotations [3.7MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/val.json.tar.gz)
+      * s3://ml-inat-competition-datasets/sounds/2024/val.json.tar.gz
+      * Running `md5sum val.json.tar.gz` should produce `eac9536716b161ee559620aa899d47e9`
+  * [Test Recordings [27GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/test.tar.gz)
+      * s3://ml-inat-competition-datasets/sounds/2024/test.tar.gz
+      * Running `md5sum test.tar.gz` should produce `082a2e96ca34f6c9f61767e33cbf3626`
       * Recordings have a sample rate of 22.05kHz and have been converted to WAV format
       * Untaring the recordings creates a directory structure like `test/category/recording.wav`. This may take a while.
-  * [Test Annotations [MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/2021/public_test.json.tar.gz)
-      * s3://ml-inat-competition-datasets/2021/public_test.json.tar.gz
-      * Running `md5sum test.json.tar.gz` should produce `7a9413db55c6fa452824469cc7dd9d3d`
+  * [Test Annotations [4.0MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/test.json.tar.gz)
+      * s3://ml-inat-competition-datasets/sounds/2024/test.json.tar.gz
+      * Running `md5sum test.json.tar.gz` should produce `638579313eb526f3b3b82bdcdc933a2d`

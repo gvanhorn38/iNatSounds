@@ -18,8 +18,6 @@ Reptilia| 32 | 154 | 3 | 49 | 32
 ||||||
 **Total**| 5,569 | 137,012 | 1,212 | 45,698 | 49,527
 
-
-![Map](assets/map.png)
 ![Class Counts](assets/class_counts.jpg)
 
 ## Evaluation
@@ -30,8 +28,6 @@ We evaluate at the "file-level", i.e. a single prediction and label is expected 
 3. mAP: AP is computed for each class separately and then averaged
 4. mF1: F1-score is computed for each class by choosing the threshold maximising F1 (there may be different thresholds for different classes). These F1 scores are averaged
 
-
-## Guidelines
 
 ## Annotation Format
 
@@ -95,6 +91,7 @@ license{
 ```
 
 ### Annotation Format Notes:
+- It is possible for the location_uncertainty field to be null or nan when it was missing from the respective iNaturalist observation.
 
 ## Terms of Use
 By downloading this dataset you agree to the following terms:

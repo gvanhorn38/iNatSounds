@@ -112,7 +112,7 @@ The dataset files are available through the AWS Open Data Program:
       * Untaring the recordings creates a directory structure like `train/category/recording.wav`. This may take a while.
   * [Train Annotations [14MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/train.json.tar.gz)
       * s3://ml-inat-competition-datasets/sounds/2024/train.json.tar.gz
-      * Running `md5sum train.json.tar.gz` should produce `a28055b8cae7020c3bbf0c0a0717483a`
+      * Running `md5sum train.json.tar.gz` should produce `d0ae17ef52078194d450a83b5efe68a4`
   * [Validation Recordings [25GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/val.tar.gz)
       * s3://ml-inat-competition-datasets/sounds/2024/val.tar.gz
       * Running `md5sum val.tar.gz` should produce `828e4cf96e818228cb3536469cb3fb1c`
@@ -120,7 +120,7 @@ The dataset files are available through the AWS Open Data Program:
       * Untaring the recordings creates a directory structure like `val/category/recording.wav`. This may take a while.
   * [Validation Annotations [3.7MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/val.json.tar.gz)
       * s3://ml-inat-competition-datasets/sounds/2024/val.json.tar.gz
-      * Running `md5sum val.json.tar.gz` should produce `eac9536716b161ee559620aa899d47e9`
+      * Running `md5sum val.json.tar.gz` should produce `8e6e4b9628d43e36f1fea4621945403a`
   * [Test Recordings [27GB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/test.tar.gz)
       * s3://ml-inat-competition-datasets/sounds/2024/test.tar.gz
       * Running `md5sum test.tar.gz` should produce `082a2e96ca34f6c9f61767e33cbf3626`
@@ -128,4 +128,4 @@ The dataset files are available through the AWS Open Data Program:
       * Untaring the recordings creates a directory structure like `test/category/recording.wav`. This may take a while.
   * [Test Annotations [4.0MB]](https://ml-inat-competition-datasets.s3.amazonaws.com/sounds/2024/test.json.tar.gz)
       * s3://ml-inat-competition-datasets/sounds/2024/test.json.tar.gz
-      * Running `md5sum test.json.tar.gz` should produce `638579313eb526f3b3b82bdcdc933a2d`
+      * Running `md5sum test.json.tar.gz` should produce `5482f112f05db4ba8576ba425d95d6a7`
